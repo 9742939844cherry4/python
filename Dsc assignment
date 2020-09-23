@@ -1,3 +1,5 @@
+PROBLEM 1:
+
 Triller=["dark","mindhuntar","parasite","incription","prison break","money heist","war"]
 Comedy=["friends","3 idiots","how I meet ur brother","the big Bang theory","the office","space force"]
 i=input()
@@ -7,3 +9,21 @@ elif i.lower() in comedy:
    print("it is comedy")
 else:
  print("it's neither comedy or thriller)
+
+
+PROBLEM2:
+import math
+import os
+import randam
+import re 
+import sys
+from collections import defaultdisct
+def clothstore(n,ar):
+ pairs=0
+ count=defaultdisct(int)
+ for items in ar:
+   count[items] += 1
+ for k,v in count.items():
+  pairs += v//2
+
+return pairs
